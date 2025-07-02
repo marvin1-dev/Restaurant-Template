@@ -20,28 +20,31 @@
       color: #333;
     }
 
-header {
-  background: url('imgs/main.jpeg') no-repeat center center/cover;
-  position: relative;
-  color: white;
-  padding: 8rem 1rem 14rem;
-  text-align: center;
-  z-index: 1;
-  overflow: hidden;
-}
+    header {
+    background: url('imgs/main.jpeg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    padding: 8rem 1rem 14rem;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    }
 
-.header-overlay {
-  position: relative;
-  z-index: 2;
-}
+    .header-overlay {
+    position: relative;
+    z-index: 2;
+    }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust darkness here */
-  z-index: 1;
-}
+    header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness here */
+    z-index: 1;
+    }
+
+
+
     header h1 {
       font-family: var(--heading-font);
       font-size: 3.5rem;
@@ -51,6 +54,18 @@ header::before {
       font-size: 1.2rem;
       margin-top: 1rem;
     }
+    header p a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    header p a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+    }
+
+    
 
     .btn {
       margin-top: 1.5rem;
